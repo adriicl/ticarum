@@ -21,7 +21,7 @@ public class Competition {
     @Column(name = "reserved_day")
     private Set<LocalDate> reservedDays = new TreeSet<>();
 
-    // Constructors, getters y setters
+   
 
     public Competition() {}
 
@@ -34,17 +34,7 @@ public class Competition {
         this.reservedDays = reservedDays != null ? new TreeSet<>(reservedDays) : new TreeSet<>();
     }
 
-    // getters y setters...
-
-    // (omito por brevedad en este bloque, incluir en el proyecto real)
     
-    // Generar getters y setters para todos los campos
-
-    // equals/hashCode si se considera necesario
-
-    // toString opcional
-    
-    // ...
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
     public String getName() { return name; }
